@@ -1,0 +1,498 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  overflow-x: hidden;
+}
+
+.center{
+  padding: 0 4%; 
+  margin: 0 auto;
+}
+
+header{
+  background-image: linear-gradient(black, #141414);
+  height: 7.5%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.category{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.category nav{
+  display: flex;
+  width: 70%;
+  padding-left: 20px;
+}
+
+.category nav a{
+  text-decoration: none;
+  color: white;
+  transition: color .4s;
+  margin: 0 2%;
+  font-size: 1.1vw;
+}
+
+.category nav a:hover{
+  color: rgb(187, 184, 184);
+}
+
+.selected{
+  font-weight: bold;
+}
+
+.logo-netflix{
+  width: 19.5%;
+  padding-top: 11.5%;
+  position: relative;
+} 
+
+.category a img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-left: -11px;
+}
+
+#section-1{
+  margin-top: 5%;
+  width: 100%;
+  padding-top: 45%;
+  position: relative;
+}
+
+.img-section1{
+  background: url('../imgs/capa.jpg') no-repeat; 
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;  
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.desc-section1{
+  width: 30%;
+  padding-top: 15%;
+  color: white;
+  position: absolute;
+  bottom: 33%;
+  left: 4%;
+}
+
+.desc-section1 h1{
+  position: absolute;
+  top: -10px;
+  font-size: 2.4vw;
+}
+
+.desc-section1 h3{
+  font-weight: normal;
+  font-size: 1.4vw;
+  position: absolute;
+  top: 40px;
+}
+
+.buttons{
+  width: 100%;
+  padding-top: 20px;
+  position: absolute;
+  bottom: -40px;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.assistir{
+  padding: 2.9% 0;
+  padding-left: 11%;
+  padding-right: 7%;
+  font-weight: bold;
+  font-size: 1.3vw;
+  border: none;
+  border-bottom: 2px solid #747272;
+  border-radius: 5px;
+  outline: none;
+}
+
+.assistir:hover{
+  background: rgb(201, 199, 199);
+}
+
+.assistir i{
+  position: relative;
+  right: 17px;
+  font-size: 1.3vw;
+}
+
+.mais-info{
+  background-color: rgba(117, 117, 117, 0.6);
+  border-radius: 3px;
+  border: none;
+  padding: 2.5% 7%;
+  padding-left: 9%;
+  color: white;
+  margin-left: 8px;
+  font-size: 1.3vw;
+  font-weight: bold;
+  outline: none;
+}
+
+.mais-info:hover{
+  background-color: rgba(117, 117, 117, 0.3);
+}
+
+.mais-info i{
+  position: relative;
+  right: 15px;
+  font-size: 1.3vw;
+}
+
+section h3{
+  color: white;
+  padding-bottom: 9px;
+  font-size: 1.4vw;
+}
+
+main{
+  width: 100%;
+  background: rgb(20,20,20);
+  background: linear-gradient(0deg, rgba(20,20,20,1) 79%, rgba(20,20,20,0.8939950980392157) 92%, rgba(0,212,255,0) 100%);
+  position: relative;
+  top: -100px;
+}
+
+.item{
+  width: 100%;
+  padding-top: 57%;
+  position: relative; 
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  transition: all .5s;
+}
+
+.previa .item{
+  margin: 0;
+  width: 50%;
+  padding-top: 200%;
+}
+
+.previa .item .box-filme{
+  width: 200%;
+}
+
+.owl-dots{
+  display: none;
+}
+
+.owl-carousel{
+  margin-bottom: 45px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes-sociais i{
+  font-size: 2.5vw;
+  padding-right: 20px;
+  color:  rgb(117, 115, 115);
+}
+
+.links a{
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
+  color: rgb(117, 115, 115);
+  font-size: 1vw;
+}
+
+.links a:hover{
+  text-decoration: underline;
+}
+
+footer{
+  padding: 0 11%;
+  position: relative;
+  top: -50px;
+}
+
+footer button{
+  background-color: transparent;
+  border: 1px solid  rgb(117, 115, 115);
+  color:  rgb(117, 115, 115);
+  padding: 7px;
+  margin: 10px 0;
+  font-size: 1vw;
+}
+
+footer button:hover{
+  color: white;
+}
+
+footer p{
+  color:  rgb(117, 115, 115);
+  font-size: 1vw;
+  margin: 12px 0;
+}
+
+@media(max-width: 900px) {
+  header{
+    padding: 2% 0;
+    height: initial;
+  }
+  
+  .category{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .category nav{
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+
+  .category nav a{
+    font-size: 1.3vw;
+  }
+  
+  .logo-netflix{
+    width: 10%;
+    padding-top: 6%;
+  } 
+
+  #section-1{
+    padding-top: 65%;
+  }
+  
+  .desc-section1{
+    width: 50%;
+  }
+  
+  .desc-section1 h3{
+    font-size: 1.6vw;
+  }
+  
+  section h3{
+    font-size: 1.5vw;
+  }
+  
+  .previa .item{
+    padding-top: 150%;
+  }
+  
+  .redes-sociais i{
+    font-size: 3vw;
+  }
+  
+  .links a{
+    font-size: 1.4vw;
+  }
+  
+  footer button{
+    font-size: 1.4vw;
+  }
+}
+
+@media(max-width: 700px) {
+  #section-1{
+    padding-top: 90%;
+  }
+
+  .category nav a{
+    font-size: 1.5vw;
+  }
+  
+  .logo-netflix{
+    width: 12%;
+    padding-top: 8%;
+  } 
+
+  section h3{
+    font-size: 2vw;
+  }
+  
+  .desc-section1{
+    width: 60%;
+  }
+  
+  .desc-section1 h3{
+    font-size: 1.9vw;
+  }
+  
+  .buttons{
+    flex-wrap: wrap;
+  }
+  
+  .assistir{
+    padding-left: 15%;
+    padding-right: 11%;
+  }
+}
+
+@media(max-width: 600px){
+  #section-1{
+    padding-top: 100%;
+  }
+
+  .category nav a{
+    font-size: 2vw;
+  }
+
+  .desc-section1{
+    width: 65%;
+    padding-top: 33%;
+  }
+
+  .desc-section1 h3{
+    font-size: 2.5vw;
+  }
+
+  .desc-section1 h1{
+    font-size: 4vw;
+  }
+  
+  .assistir{
+    width: 75%;
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+  }
+  
+  .assistir i{
+    font-size: 2.5vw;
+  }
+  
+  .mais-info{
+    width: 75%;
+    margin: 0;
+    font-size: 2.5vw;
+  }
+  
+  .mais-info i{
+    font-size: 2.5vw;
+  }
+
+  section h3{
+    font-size: 2.5vw;
+  }
+  
+  footer .flex{
+    flex-wrap: wrap;
+  }
+
+  .links{
+    width: 50%;
+  }
+
+  .links a{
+    font-size: 2vw;
+  }
+
+  footer button{
+    font-size: 1.8vw;
+  }
+  
+  footer p{
+    font-size: 1.5vw;
+  }
+}
+
+@media(max-width: 500px){  
+  .category nav a{
+    font-size: 2.4vw;
+  }
+
+  .desc-section1 h1{
+    top: 0px;
+    font-size: 3vw;
+  }
+  
+  .desc-section1 h3{
+    top: 20px;
+  }
+
+  .buttons{
+    bottom: -20px;
+  }
+  
+  section h3{
+    font-size: 3vw;
+  }
+  
+  .previa .item{
+    width: 50%;
+    padding-top: 120%;
+  }
+  
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer .flex{
+    flex-direction: column;    
+  }
+
+  .redes-sociais{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .redes-sociais a{
+    margin: 0 2%;
+    margin-bottom: 10px;
+  }
+
+  .redes-sociais i{
+    font-size: 5vw;
+  }
+  
+  .links{
+    width: 100%;
+    text-align: center;
+  }
+
+  .links a{
+    font-size: 2.5vw;
+  }
+
+  footer button{
+    font-size: 2vw;
+  }
+
+  footer p{
+    font-size: 2vw;
+  }
+}
+
+@media(max-width: 400px){ #section-1{padding-top: 140%}}
